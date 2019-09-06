@@ -1,0 +1,28 @@
+version: '3'
+services:
+
+  rabbitmq:
+    image: "rabbitmq:management"
+    container_name: "rabbitmq"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - front-tier
+      
+  RabbitMQSpring:
+    container_name: rabbitmqspringservice
+    image: docker-rabbitmqspringservice
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "8228:8228"
+    links:
+     - "rabbitmq:localhost"
+    networks:
+     - front-tier
+     
+networks:
+  front-tier:
+    driver: bridge
