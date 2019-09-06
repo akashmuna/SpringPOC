@@ -22,6 +22,19 @@ services:
      - "rabbitmq:localhost"
     networks:
      - front-tier
+    
+  RabbitMQSpringConsumer:
+    container_name: rabbitmqspringconsumerservice
+    image: docker-rabbitmqspringconsumerservice
+    build: 
+      context: ../RabbitMQSpringConsumer
+      dockerfile: Dockerfile
+    ports:
+     - "8223:8223"
+    links:
+     - "rabbitmq:localhost"
+    networks:
+     - front-tier
      
 networks:
   front-tier:
