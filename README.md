@@ -5,7 +5,7 @@ RabbitMQSpring act as a Producer to send the messages to RabbitMQ while RabbitMQ
 
 The Application uses docker RabbitMQ configuration and also Swagger to send the messages using the microservice RabbitMQSpring.
 
-##RabbitMQSpring
+## RabbitMQSpring
 
 This microservice acts as a Producer as well as the first consumer to make use of the messages shared to the Queue (spring-boot)
 
@@ -13,7 +13,7 @@ This microservice acts as a Producer as well as the first consumer to make use o
 
 This microservice act as a Consumer to consume the messages shared to the Queue (spring-boot) present in the Rabbit MQ
 
-##RabbitMQ
+## RabbitMQ
 
 RabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements. 
 
