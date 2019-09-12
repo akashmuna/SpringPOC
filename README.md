@@ -1,4 +1,4 @@
-# SpringPOC - (RabbitMQ + Spring boot Integration)
+# SpringPOC - (RabbitMQ + Spring Boot Integration)
 
 This is a Spring Boot MicroService(Consumer, Producer) + RabbitMQ implemented application in which 
 RabbitMQSpring act as a Producer to send the messages to RabbitMQ while RabbitMQSpringConsumer act as a consumer which consumes the messages shared by Producer
